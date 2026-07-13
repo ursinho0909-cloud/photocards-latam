@@ -39,9 +39,10 @@ img { max-width: 100%; display: block; }
 /* HERO */
 .hero {
   background: radial-gradient(ellipse at center, var(--bg-mid) 0%, var(--bg-dark) 70%);
-  padding: 20px 0 60px;
+  padding: 30px 0 40px;
   text-align: center;
 }
+.hero-cta { margin-top: 25px !important; }
 .hero-headline {
   max-width: 900px;
   margin: 0 auto 30px;
@@ -65,10 +66,11 @@ img { max-width: 100%; display: block; }
 }
 .hero-img {
   max-width: 100%;
-  width: min(1100px, 95%);
+  width: min(1400px, 98%);
   margin: 0 auto;
   border-radius: 16px;
   box-shadow: 0 20px 60px rgba(255, 46, 181, 0.35);
+  display: block;
 }
 .hero-cta {
   margin-top: 40px;
@@ -154,7 +156,7 @@ img { max-width: 100%; display: block; }
 
 /* VITRINE */
 .vitrine {
-  padding: 80px 0;
+  padding: 40px 0 45px;
   background: var(--bg-dark);
 }
 .marquee {
@@ -211,7 +213,7 @@ img { max-width: 100%; display: block; }
 
 /* PARA QUEM É */
 .para-quem {
-  padding: 80px 20px;
+  padding: 45px 20px;
   background: linear-gradient(180deg, var(--bg-dark) 0%, #12002a 100%);
 }
 .para-grid {
@@ -324,7 +326,7 @@ img { max-width: 100%; display: block; }
 
 /* QUÉ RECIBES */
 .que-recibes {
-  padding: 80px 20px;
+  padding: 45px 20px;
   background: var(--bg-dark);
 }
 .recibes-grid {
@@ -364,7 +366,7 @@ img { max-width: 100%; display: block; }
 
 /* BÔNUS */
 .bonos {
-  padding: 80px 20px;
+  padding: 45px 20px;
   background: linear-gradient(180deg, #12002a 0%, var(--bg-dark) 100%);
 }
 .bonos-grid {
@@ -462,7 +464,7 @@ img { max-width: 100%; display: block; }
 /* OFERTA */
 .oferta {
   background: linear-gradient(180deg, var(--bg-dark) 0%, var(--bg-mid) 100%);
-  padding: 80px 20px;
+  padding: 50px 20px;
 }
 .oferta-inner {
   max-width: 1100px;
@@ -494,11 +496,39 @@ img { max-width: 100%; display: block; }
   line-height: 1.2;
   margin-bottom: 24px;
 }
-.benefits { list-style: none; margin-bottom: 30px; }
+.benefits { list-style: none; margin-bottom: 20px; }
 .benefits li {
-  padding: 8px 0;
+  padding: 6px 0;
   font-size: 16px;
   color: var(--text-dim);
+}
+.bonus-mini {
+  background: linear-gradient(135deg, rgba(255,46,181,0.10), rgba(107,44,145,0.10));
+  border: 1px dashed rgba(255,46,181,0.4);
+  border-radius: 14px;
+  padding: 16px 18px;
+  margin-bottom: 24px;
+}
+.bonus-mini-title {
+  color: var(--pink-light);
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 10px;
+  letter-spacing: 0.3px;
+}
+.bonus-mini-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.bonus-mini-list span {
+  background: rgba(255,46,181,0.12);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  color: var(--text);
+  font-weight: 500;
+  border: 1px solid rgba(255,46,181,0.25);
 }
 .bonus-box {
   background: rgba(255, 46, 181, 0.08);
@@ -570,7 +600,7 @@ img { max-width: 100%; display: block; }
 
 /* PROVA SOCIAL - screenshots */
 .social-proof {
-  padding: 80px 20px;
+  padding: 45px 20px;
   background: linear-gradient(180deg, var(--bg-dark) 0%, #12002a 100%);
 }
 .proof-screen {
@@ -602,7 +632,7 @@ img { max-width: 100%; display: block; }
 
 /* FAQ */
 .faq {
-  padding: 80px 20px;
+  padding: 45px 20px;
   max-width: 800px;
   margin: 0 auto;
 }
@@ -639,7 +669,7 @@ img { max-width: 100%; display: block; }
 
 /* CTA FINAL */
 .cta-final {
-  padding: 80px 20px;
+  padding: 50px 20px;
   background: radial-gradient(ellipse at center, var(--bg-mid) 0%, var(--bg-dark) 80%);
   text-align: center;
 }
@@ -695,10 +725,13 @@ footer a {
   .tag-hot-desktop { display: none; }
   .mas-plus { font-size: 13px; padding: 16px 20px; }
   .recibes-grid { grid-template-columns: 1fr; gap: 14px; }
-  .big-stats { grid-template-columns: 1fr; gap: 14px; }
+  .big-stats { grid-template-columns: 1fr; gap: 14px; max-width: 380px; }
+  .stat { padding: 22px 16px; }
   .stat-mega { transform: none; }
-  .stat-num { font-size: 72px; }
-  .stat-mega .stat-num { font-size: 88px; }
+  .stat-num { font-size: 60px; }
+  .stat-mega .stat-num { font-size: 66px; }
+  .stat-label { font-size: 14px; }
+  .stat-mega .stat-label { font-size: 14px; }
   .bonos-grid { grid-template-columns: repeat(2, 1fr); gap: 30px 16px; }
   .bono h4 { font-size: 14px; }
   .bono p { font-size: 12px; }
