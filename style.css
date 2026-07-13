@@ -533,58 +533,32 @@ img { max-width: 100%; display: block; }
   font-size: 16px;
   color: var(--text-dim);
 }
-.bonus-mini {
-  background: linear-gradient(135deg, rgba(255,46,181,0.18), rgba(107,44,145,0.15));
-  border: 2px dashed rgba(255,46,181,0.55);
-  border-radius: 16px;
-  padding: 20px 20px 18px;
+.bonus-list {
+  background: rgba(255,46,181,0.08);
+  border: 1px solid rgba(255,46,181,0.35);
+  border-radius: 14px;
+  padding: 18px 22px;
   margin-bottom: 26px;
-  position: relative;
-  box-shadow: 0 10px 30px rgba(255,46,181,0.15);
 }
-.bonus-mini-title {
+.bonus-list-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 0;
+  font-size: 15px;
+  color: var(--text);
+  line-height: 1.4;
+  border-bottom: 1px dashed rgba(255,46,181,0.15);
+}
+.bonus-list-item:last-child { border-bottom: none; }
+.bonus-list-item strong {
   color: var(--pink-light);
   font-weight: 800;
-  font-size: 15px;
-  margin-bottom: 14px;
-  letter-spacing: 0.3px;
-  text-align: center;
-  text-transform: uppercase;
+  margin-right: 4px;
 }
-.bonus-mini-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  margin-bottom: 14px;
-}
-.bonus-mini-list span {
-  background: linear-gradient(135deg, rgba(255,46,181,0.22), rgba(255,110,199,0.15));
-  padding: 10px 12px;
-  border-radius: 12px;
-  font-size: 13px;
-  color: var(--text);
-  font-weight: 600;
-  border: 1px solid rgba(255,46,181,0.45);
-  text-align: center;
-  box-shadow: 0 4px 14px rgba(255,46,181,0.15);
-  transition: transform 0.2s;
-}
-.bonus-mini-list span:hover { transform: translateY(-2px); }
-.bonus-mini-value {
-  text-align: center;
-  color: var(--text);
-  font-size: 14px;
-  font-weight: 600;
-  padding-top: 10px;
-  border-top: 1px dashed rgba(255,46,181,0.3);
-}
-.bonus-mini-value s { color: #888; margin-right: 6px; }
-.bonus-mini-value strong {
-  color: var(--pink-light);
-  background: rgba(255,46,181,0.15);
-  padding: 3px 10px;
-  border-radius: 20px;
-  letter-spacing: 0.5px;
+.bonus-list-emoji {
+  font-size: 18px;
+  flex-shrink: 0;
 }
 .bonus-box {
   background: rgba(255, 46, 181, 0.08);
