@@ -66,11 +66,14 @@ img { max-width: 100%; display: block; }
 }
 .hero-img {
   max-width: 100%;
-  width: min(1400px, 98%);
+  width: min(1700px, 100%);
   margin: 0 auto;
-  border-radius: 16px;
-  box-shadow: 0 20px 60px rgba(255, 46, 181, 0.35);
+  border-radius: 20px;
+  box-shadow: 0 25px 70px rgba(255, 46, 181, 0.4);
   display: block;
+}
+@media (min-width: 1400px) {
+  .hero-img { width: min(1800px, 96vw); }
 }
 .hero-cta {
   margin-top: 40px;
