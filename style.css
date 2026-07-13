@@ -512,32 +512,57 @@ img { max-width: 100%; display: block; }
   color: var(--text-dim);
 }
 .bonus-mini {
-  background: linear-gradient(135deg, rgba(255,46,181,0.10), rgba(107,44,145,0.10));
-  border: 1px dashed rgba(255,46,181,0.4);
-  border-radius: 14px;
-  padding: 16px 18px;
-  margin-bottom: 24px;
+  background: linear-gradient(135deg, rgba(255,46,181,0.18), rgba(107,44,145,0.15));
+  border: 2px dashed rgba(255,46,181,0.55);
+  border-radius: 16px;
+  padding: 20px 20px 18px;
+  margin-bottom: 26px;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(255,46,181,0.15);
 }
 .bonus-mini-title {
   color: var(--pink-light);
-  font-weight: 700;
-  font-size: 14px;
-  margin-bottom: 10px;
+  font-weight: 800;
+  font-size: 15px;
+  margin-bottom: 14px;
   letter-spacing: 0.3px;
+  text-align: center;
+  text-transform: uppercase;
 }
 .bonus-mini-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 14px;
 }
 .bonus-mini-list span {
-  background: rgba(255,46,181,0.12);
-  padding: 6px 12px;
-  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(255,46,181,0.22), rgba(255,110,199,0.15));
+  padding: 10px 12px;
+  border-radius: 12px;
   font-size: 13px;
   color: var(--text);
-  font-weight: 500;
-  border: 1px solid rgba(255,46,181,0.25);
+  font-weight: 600;
+  border: 1px solid rgba(255,46,181,0.45);
+  text-align: center;
+  box-shadow: 0 4px 14px rgba(255,46,181,0.15);
+  transition: transform 0.2s;
+}
+.bonus-mini-list span:hover { transform: translateY(-2px); }
+.bonus-mini-value {
+  text-align: center;
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 600;
+  padding-top: 10px;
+  border-top: 1px dashed rgba(255,46,181,0.3);
+}
+.bonus-mini-value s { color: #888; margin-right: 6px; }
+.bonus-mini-value strong {
+  color: var(--pink-light);
+  background: rgba(255,46,181,0.15);
+  padding: 3px 10px;
+  border-radius: 20px;
+  letter-spacing: 0.5px;
 }
 .bonus-box {
   background: rgba(255, 46, 181, 0.08);
@@ -717,7 +742,10 @@ footer a {
   .marquee-fast { animation-duration: 18s; }
   .marquee-slow { animation-duration: 28s; }
   .section-title { font-size: 30px; }
-  .oferta-info h2 { font-size: 26px; }
+  .oferta-info { text-align: center; }
+  .oferta-info h2 { font-size: 26px; text-align: center; }
+  .benefits { max-width: 340px; margin-left: auto; margin-right: auto; text-align: left; padding: 0 8px; }
+  .benefits li { font-size: 15px; }
   .hero-headline h1 { font-size: 34px; }
   .hero-headline p { font-size: 15px; }
   .price-new { font-size: 54px; }
