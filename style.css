@@ -614,15 +614,12 @@ img { max-width: 100%; display: block; }
   font-size: 14px;
 }
 /* Preço local por país (injetado via JS) */
-.price-new-big.has-local {
-  font-size: 42px;
-  opacity: 0.85;
-}
+.price-new-big.has-local { display: none; }
 .price-local {
   display: none;
   margin-top: 4px;
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 72px;
+  font-size: 78px;
   line-height: 1;
   background: linear-gradient(135deg, var(--pink), var(--pink-light));
   -webkit-background-clip: text;
