@@ -69,6 +69,13 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
     });
   }
 
+  // Atalho de teste: ?pais=AR força o país sem VPN
+  var forced = new URLSearchParams(location.search).get('pais');
+  if (forced && COUNTRIES[forced.toUpperCase()]) {
+    render(COUNTRIES[forced.toUpperCase()]);
+    return;
+  }
+
   fetch('/cdn-cgi/trace')
     .then(function (r) { return r.text(); })
     .then(function (t) {
